@@ -19,49 +19,32 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      injectRegister: "auto",
+      // GitHub Pages'de SW cache sorunlarini onlemek icin disable
+      injectRegister: null,
+      selfDestroying: true,
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff,woff2,ttf,eot}"],
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "google-fonts-cache",
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
-              cacheableResponse: { statuses: [0, 200] },
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "gstatic-fonts-cache",
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 },
-              cacheableResponse: { statuses: [0, 200] },
-            },
-          },
-        ],
+        globPatterns: [],
         navigateFallback: null,
+        cleanupOutdatedCaches: true,
       },
       manifest: {
-        name: "Soba Yönetim Sistemi",
+        name: "Soba Yonetim Sistemi",
         short_name: "Soba YS",
-        description: "Soba satış ve stok yönetim sistemi",
+        description: "Soba satis ve stok yonetim sistemi",
         theme_color: "#1e40af",
         background_color: "#0f172a",
         display: "standalone",
         orientation: "any",
-        start_url: "/",
+        start_url: "/1/",
         icons: [
           {
-            src: "/favicon.svg",
+            src: "/1/favicon.svg",
             sizes: "any",
             type: "image/svg+xml",
             purpose: "any maskable",
           },
-          { src: "/pwa-192.png", sizes: "192x192", type: "image/png" },
-          { src: "/pwa-512.png", sizes: "512x512", type: "image/png" },
+          { src: "/1/pwa-192.png", sizes: "192x192", type: "image/png" },
+          { src: "/1/pwa-512.png", sizes: "512x512", type: "image/png" },
         ],
       },
       devOptions: { enabled: false },
