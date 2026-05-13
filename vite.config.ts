@@ -84,7 +84,9 @@ export default defineConfig({
     minify: "esbuild",
     // Emoji ve Türkçe karakterlerin bozulmaması için
     target: "esnext",
-    target: "esnext",
+    esbuildOptions: {
+      charset: "utf8",
+    },
     // Chunk size uyarı limiti (KB)
     chunkSizeWarningLimit: 500,
     // Source map sadece development'ta
