@@ -1,0 +1,12 @@
+{
+  "filled": 200,
+  "storageDebug": {
+    "used": 0,
+    "max": 204800,
+    "keys": []
+  },
+  "result": {
+    "ok": false,
+    "error": "QuotaExceededError: QuotaExceededError: mock"
+  }
+}

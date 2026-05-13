@@ -1,0 +1,42 @@
+# Bağımlılıklar
+node_modules/
+
+# Build çıktıları
+dist/
+build/
+
+# Test raporları
+test-report/
+test-results/
+playwright-report/
+
+# Android build
+android/.gradle/
+android/.kotlin/
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/
+android/app/google-services.json
+
+# Ortam değişkenleri (hassas)
+.env
+.env.local
+.env.*.local
+
+# Geçici dosyalar
+*.log
+*.tmp
+html.meta.json.gz
+test-report.html
+assets/
+
+# Yedek klasör
+vy/
+
+# IDE
+.vscode/launch.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

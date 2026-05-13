@@ -1,0 +1,31 @@
+#!/bin/bash
+# Task 3.4 & 15.2: Android build pipeline
+# KullanÄ±m: ./scripts/build-android.sh [dev|prod]
+
+set -e
+
+MODE=${1:-dev}
+echo "ðŸ”¨ Android build baÅŸlatÄ±lÄ±yor â€” mod: $MODE"
+
+# 1. Web build
+echo "ðŸ“¦ Web uygulamasÄ± derleniyor..."
+npm run build
+
+# 2. Capacitor sync
+if [ "$MODE" = "prod" ]; then
+  echo "ðŸ”„ Capacitor sync (production)..."
+  npx cap sync --config capacitor.config.prod.json
+else
+  echo "ðŸ”„ Capacitor sync (development)..."
+  npx cap sync
+fi
+
+# 3. Android build
+echo "ðŸ¤– Android APK derleniyor..."
+if [ "$MODE" = "prod" ]; then
+  cd android && ./gradlew assembleRelease
+  echo "âœ… Release APK: android/app/build/outputs/apk/release/app-release.apk"
+else
+  cd android && ./gradlew assembleDebug
+  echo "âœ… Debug APK: android/app/build/outputs/apk/debug/app-debug.apk"
+fi

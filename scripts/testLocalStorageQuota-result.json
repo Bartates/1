@@ -1,0 +1,10 @@
+{
+  "fillResult": {
+    "filled": 2000
+  },
+  "testResult": {
+    "ok": true,
+    "written": 1000
+  },
+  "screenshotPath": "./scripts/test-quota-1778571606060.png"
+}

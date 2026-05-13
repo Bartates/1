@@ -1,0 +1,25 @@
+
+C:\Users\PARS PELET\Desktop\tap\vss\gitlab\11\e2e\helpers\app.ts
+  1:23  error  Parsing error: Unexpected token Page
+
+C:\Users\PARS PELET\Desktop\tap\vss\gitlab\11\e2e\sales.spec.ts
+  4:32  error  Parsing error: Unexpected token :
+
+C:\Users\PARS PELET\Desktop\tap\vss\gitlab\11\eslint-fixer2.cjs
+  24:5  error  'console' is not defined  no-undef
+  27:3  error  'console' is not defined  no-undef
+
+C:\Users\PARS PELET\Desktop\tap\vss\gitlab\11\senaryo_plani.js
+    4:16  error  'PageNumber' is assigned a value but never used       no-unused-vars
+    4:54  error  'TableOfContents' is assigned a value but never used  no-unused-vars
+    5:5   error  'require' is not defined                              no-undef
+    6:12  error  'require' is not defined                              no-undef
+   26:7   error  'thickBorders' is assigned a value but never used     no-unused-vars
+   45:10  error  'h3' is defined but never used                        no-unused-vars
+  125:29  error  'i' is defined but never used                         no-unused-vars
+  767:3   error  'console' is not defined                              no-undef
+  768:17  error  'console' is not defined                              no-undef
+  768:35  error  'process' is not defined                              no-undef
+
+Γ£û 14 problems (14 errors, 0 warnings)
+

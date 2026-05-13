@@ -1,0 +1,914 @@
+{
+  "_version": 17,
+  "products": [
+    {
+      "id": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "createdAt": "2026-05-13T11:30:13.678Z",
+      "updatedAt": "2026-05-13T11:32:28.797Z",
+      "name": "pars",
+      "category": "soba",
+      "cost": 4333.33,
+      "price": 0,
+      "stock": 0,
+      "minStock": 5,
+      "supplierId": "",
+      "brand": "",
+      "barcode": "",
+      "description": ""
+    }
+  ],
+  "sales": [
+    {
+      "id": "42b5eaa8-ea6a-4a90-884f-22f170524a4d",
+      "customerId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "productCategory": "soba",
+      "quantity": 13,
+      "unitPrice": 15000,
+      "cost": 56333.29,
+      "discount": 0,
+      "discountAmount": 0,
+      "subtotal": 195000,
+      "total": 195000,
+      "profit": 138666.71,
+      "payment": "nakit",
+      "status": "tamamlandi",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "quantity": 13,
+          "unitPrice": 15000,
+          "cost": 4333.33,
+          "total": 195000
+        }
+      ],
+      "createdAt": "2026-05-13T08:35:00.000Z",
+      "updatedAt": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "e4d2a91e-96a4-4c90-a964-eeeb7deb2572",
+      "customerId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "productCategory": "soba",
+      "quantity": 1,
+      "unitPrice": 14400,
+      "cost": 4333.33,
+      "discount": 500,
+      "discountAmount": 500,
+      "subtotal": 14900,
+      "total": 14400,
+      "profit": 10066.67,
+      "payment": "pos_yk",
+      "status": "tamamlandi",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "quantity": 1,
+          "unitPrice": 14900,
+          "cost": 4333.33,
+          "total": 14900
+        }
+      ],
+      "createdAt": "2026-05-13T08:35:00.000Z",
+      "updatedAt": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "b2c78de7-0b2b-4aa8-881d-9581d5cb2a1b",
+      "customerId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "productCategory": "soba",
+      "quantity": 10,
+      "unitPrice": 15000,
+      "cost": 43333.3,
+      "discount": 0,
+      "discountAmount": 0,
+      "subtotal": 150000,
+      "total": 150000,
+      "profit": 106666.7,
+      "payment": "cari",
+      "status": "tamamlandi",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "quantity": 10,
+          "unitPrice": 15000,
+          "cost": 4333.33,
+          "total": 150000
+        }
+      ],
+      "createdAt": "2026-05-13T08:36:00.000Z",
+      "updatedAt": "2026-05-13T08:36:00.000Z"
+    },
+    {
+      "id": "c96f621a-69f7-49b4-b999-f61d04151c1b",
+      "customerId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "productCategory": "soba",
+      "quantity": 10,
+      "unitPrice": 15000,
+      "cost": 43333.3,
+      "discount": 0,
+      "discountAmount": 0,
+      "subtotal": 150000,
+      "total": 150000,
+      "profit": 106666.7,
+      "payment": "nakit",
+      "status": "tamamlandi",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "quantity": 10,
+          "unitPrice": 15000,
+          "cost": 4333.33,
+          "total": 150000
+        }
+      ],
+      "createdAt": "2026-05-13T08:37:00.000Z",
+      "updatedAt": "2026-05-13T08:37:00.000Z"
+    },
+    {
+      "id": "92aeb80b-8f27-41cb-94cc-3596a9cbd922",
+      "customerId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "productCategory": "soba",
+      "quantity": 116,
+      "unitPrice": 99999999,
+      "cost": 502666.27999999997,
+      "discount": 0,
+      "discountAmount": 0,
+      "subtotal": 11599999884,
+      "total": 11599999884,
+      "profit": 11599497217.72,
+      "payment": "nakit",
+      "status": "tamamlandi",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "quantity": 116,
+          "unitPrice": 99999999,
+          "cost": 4333.33,
+          "total": 11599999884
+        }
+      ],
+      "createdAt": "2026-05-13T08:38:00.000Z",
+      "updatedAt": "2026-05-13T08:38:00.000Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "4a8a3905-3396-45ba-afa6-62702f4ae2c4",
+      "createdAt": "2026-05-13T11:30:45.374Z",
+      "updatedAt": "2026-05-13T11:30:45.374Z",
+      "totalOrders": 1,
+      "totalAmount": 650000,
+      "name": "eşrf",
+      "category": "soba",
+      "phone": "",
+      "taxNo": "",
+      "contact": "",
+      "email": "",
+      "address": "",
+      "note": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": "9f7a1c51-aa9d-4fb9-bd62-8430a3084a24",
+      "supplierId": "4a8a3905-3396-45ba-afa6-62702f4ae2c4",
+      "items": [
+        {
+          "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+          "productName": "pars",
+          "qty": 50,
+          "unitCost": 13000,
+          "lineTotal": 650000
+        }
+      ],
+      "amount": 650000,
+      "paidAmount": 0,
+      "remainingAmount": 650000,
+      "payments": [],
+      "deliveryDate": "2026-05-13",
+      "note": "test partisai\n",
+      "status": "tamamlandi",
+      "createdAt": "2026-05-13T11:33:28.398Z",
+      "updatedAt": "2026-05-13T11:33:32.142Z",
+      "stockCompleted": true
+    }
+  ],
+  "cari": [
+    {
+      "id": "4a8a3905-3396-45ba-afa6-62702f4ae2c4",
+      "createdAt": "2026-05-13T11:30:45.374Z",
+      "updatedAt": "2026-05-13T11:33:32.143Z",
+      "name": "eşrf",
+      "type": "tedarikci",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "taxNo": "",
+      "balance": 650000
+    },
+    {
+      "id": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T11:34:59.475Z",
+      "updatedAt": "2026-05-13T08:37:00.000Z",
+      "name": "baykuş",
+      "type": "musteri",
+      "balance": 151400,
+      "taxNo": "",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "note": "",
+      "lastTransaction": "2026-05-13T08:37:00.000Z"
+    }
+  ],
+  "kasa": [
+    {
+      "id": "1f1acd8b-d2de-4123-af82-ad48d466cc4f",
+      "type": "gelir",
+      "category": "satis",
+      "amount": 195000,
+      "kasa": "nakit",
+      "description": "Satış: pars",
+      "relatedId": "42b5eaa8-ea6a-4a90-884f-22f170524a4d",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T08:35:00.000Z",
+      "updatedAt": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "775efbcf-520f-46db-ae6d-db85c15d25e1",
+      "type": "gelir",
+      "category": "satis",
+      "amount": 13000,
+      "kasa": "pos_yk",
+      "description": "Satış: pars",
+      "relatedId": "e4d2a91e-96a4-4c90-a964-eeeb7deb2572",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T08:35:00.000Z",
+      "updatedAt": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "a206e0d3-d8d9-4108-9bf1-d393dd5d9acf",
+      "type": "gelir",
+      "category": "satis",
+      "amount": 100000,
+      "kasa": "nakit",
+      "description": "Satış: pars",
+      "relatedId": "b2c78de7-0b2b-4aa8-881d-9581d5cb2a1b",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T08:36:00.000Z",
+      "updatedAt": "2026-05-13T08:36:00.000Z"
+    },
+    {
+      "id": "584de580-5ba1-41c6-83d5-f1221a43570a",
+      "type": "gelir",
+      "category": "satis",
+      "amount": 50000,
+      "kasa": "nakit",
+      "description": "Satış: pars",
+      "relatedId": "c96f621a-69f7-49b4-b999-f61d04151c1b",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T08:37:00.000Z",
+      "updatedAt": "2026-05-13T08:37:00.000Z"
+    },
+    {
+      "id": "4af69dfd-3fa4-4f74-99d2-4cba8247f4a7",
+      "type": "gelir",
+      "category": "satis",
+      "amount": 1.112e+33,
+      "kasa": "nakit",
+      "description": "Satış: pars",
+      "relatedId": "92aeb80b-8f27-41cb-94cc-3596a9cbd922",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "createdAt": "2026-05-13T08:38:00.000Z",
+      "updatedAt": "2026-05-13T08:38:00.000Z"
+    }
+  ],
+  "kasalar": [
+    {
+      "id": "nakit",
+      "name": "Nakit",
+      "icon": "💵"
+    },
+    {
+      "id": "banka",
+      "name": "Banka",
+      "icon": "🏦"
+    },
+    {
+      "id": "pos_ziraat",
+      "name": "POS Ziraat",
+      "icon": "🏧"
+    },
+    {
+      "id": "pos_is",
+      "name": "POS İş",
+      "icon": "🏧"
+    },
+    {
+      "id": "pos_yk",
+      "name": "POS YapıKredi",
+      "icon": "🏧"
+    }
+  ],
+  "bankTransactions": [],
+  "matchRules": [],
+  "monitorRules": [
+    {
+      "id": "b124592a-118f-4bd5-9709-50e4be7718a4",
+      "isDefault": true,
+      "createdAt": "2026-05-13T11:29:13.757Z",
+      "updatedAt": "2026-05-13T11:29:13.757Z",
+      "name": "Stok Tükendi Uyarısı",
+      "type": "stok_sifir",
+      "level": "critical",
+      "interval": 30,
+      "popup": true,
+      "active": true,
+      "threshold": 0
+    },
+    {
+      "id": "0b610ca0-7232-4bdc-b6a7-f8637a9683ff",
+      "isDefault": true,
+      "createdAt": "2026-05-13T11:29:13.757Z",
+      "updatedAt": "2026-05-13T11:29:13.757Z",
+      "name": "Düşük Stok Uyarısı",
+      "type": "stok_min",
+      "level": "warning",
+      "interval": 60,
+      "popup": true,
+      "active": true
+    },
+    {
+      "id": "b36b1ca3-f5e8-47b3-a25d-6231967d628b",
+      "isDefault": true,
+      "createdAt": "2026-05-13T11:29:13.757Z",
+      "updatedAt": "2026-05-13T11:29:13.757Z",
+      "name": "Düşük Kasa Bakiyesi",
+      "type": "kasa_min",
+      "level": "warning",
+      "interval": 300,
+      "popup": true,
+      "active": true,
+      "threshold": 1000,
+      "kasa": "nakit"
+    }
+  ],
+  "monitorLog": [],
+  "stockMovements": [
+    {
+      "id": "0f00d5e4-aa0c-4610-9a39-c81e3b312bf7",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "giris",
+      "amount": 100,
+      "before": 0,
+      "after": 100,
+      "note": "",
+      "date": "2026-05-13T11:32:28.797Z"
+    },
+    {
+      "id": "38f658b3-85aa-4090-ba25-550b75adc4a1",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "giris",
+      "amount": 50,
+      "before": 100,
+      "after": 150,
+      "note": "Sipariş #9f7a1c51 — eşrf",
+      "date": "2026-05-13T11:33:32.143Z"
+    },
+    {
+      "id": "9396d349-79e1-4780-bc33-1679c411b834",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "satis",
+      "amount": -13,
+      "before": 150,
+      "after": 137,
+      "note": "Satış",
+      "date": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "d93ec737-1e78-49a2-99a2-7e6220775d78",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "satis",
+      "amount": -1,
+      "before": 137,
+      "after": 136,
+      "note": "Satış",
+      "date": "2026-05-13T08:35:00.000Z"
+    },
+    {
+      "id": "2073b5d2-c682-478f-94a6-76a659314e7c",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "satis",
+      "amount": -10,
+      "before": 136,
+      "after": 126,
+      "note": "Satış",
+      "date": "2026-05-13T08:36:00.000Z"
+    },
+    {
+      "id": "7f6ced6a-80db-4325-8495-951dbc4612d7",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "satis",
+      "amount": -10,
+      "before": 126,
+      "after": 116,
+      "note": "Satış",
+      "date": "2026-05-13T08:37:00.000Z"
+    },
+    {
+      "id": "f3a853b2-4096-42bc-9733-313be6a48add",
+      "productId": "8644b51a-5553-40d1-9c25-4b9a05c5d142",
+      "productName": "pars",
+      "type": "satis",
+      "amount": -116,
+      "before": 116,
+      "after": 0,
+      "note": "Satış",
+      "date": "2026-05-13T08:38:00.000Z"
+    }
+  ],
+  "peletSuppliers": [],
+  "peletOrders": [],
+  "boruSuppliers": [],
+  "boruOrders": [],
+  "invoices": [
+    {
+      "id": "01af051c-578f-4bf4-b0a1-fcfae7022710",
+      "invoiceNo": "SFT-2026-0001",
+      "type": "satis",
+      "cariId": "e86877bf-337b-4a97-99a2-f0204243be5d",
+      "cariName": "baykuş",
+      "cariTaxNo": "",
+      "cariAddress": "",
+      "items": [
+        {
+          "description": "00",
+          "quantity": 100000,
+          "unitPrice": 1400000000009,
+          "vatRate": 20,
+          "total": 168000000001080000
+        }
+      ],
+      "discount": 0,
+      "payment": "nakit",
+      "dueDate": "2026-05-13",
+      "note": "bakalım",
+      "status": "onaylandi",
+      "saleId": "c96f621a-69f7-49b4-b999-f61d04151c1b",
+      "subtotal": 140000000000900000,
+      "vatTotal": 28000000000180000,
+      "total": 168000000001080000,
+      "createdAt": "2026-05-13T11:42:01.409Z",
+      "updatedAt": "2026-05-13T11:42:01.409Z"
+    }
+  ],
+  "budgets": [],
+  "returns": [],
+  "_activityLog": [],
+  "company": {
+    "id": "4e4a5112-a297-42d8-9a78-2af9190b6400",
+    "createdAt": "2026-05-13T11:29:13.757Z"
+  },
+  "settings": {},
+  "pelletSettings": {
+    "gramaj": 14,
+    "kgFiyat": 6.5,
+    "cuvalKg": 15,
+    "critDays": 3
+  },
+  "ortakEmanetler": [],
+  "installments": [],
+  "partners": [],
+  "productCategories": [
+    {
+      "id": "soba",
+      "name": "Soba",
+      "icon": "🔥",
+      "createdAt": "2026-05-13T11:29:13.757Z"
+    },
+    {
+      "id": "aksesuar",
+      "name": "Aksesuar",
+      "icon": "🔧",
+      "createdAt": "2026-05-13T11:29:13.757Z"
+    },
+    {
+      "id": "yedek",
+      "name": "Yedek Parça",
+      "icon": "⚙️",
+      "createdAt": "2026-05-13T11:29:13.757Z"
+    },
+    {
+      "id": "boru",
+      "name": "Boru",
+      "icon": "🔩",
+      "createdAt": "2026-05-13T11:29:13.757Z"
+    },
+    {
+      "id": "pelet",
+      "name": "Pelet",
+      "icon": "🪵",
+      "createdAt": "2026-05-13T11:29:13.757Z"
+    }
+  ],
+  "notes": [],
+  "_auditLog": [
+    {
+      "id": "cacabbab-4001-4113-9047-ad3e7490fbe2",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "invoices": "[0 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:40:21.055Z"
+      },
+      "nextValue": {
+        "invoices": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:42:01.411Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:42:01.412Z"
+    },
+    {
+      "id": "a940d366-f164-491e-bcfa-db298e94c946",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[4 kayıt]",
+        "kasa": "[4 kayıt]",
+        "stockMovements": "[6 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:38:24.688Z"
+      },
+      "nextValue": {
+        "sales": "[5 kayıt]",
+        "kasa": "[5 kayıt]",
+        "stockMovements": "[7 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:40:21.055Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:40:21.055Z"
+    },
+    {
+      "id": "51929562-e287-4d6c-8aae-53578a26eb6b",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[4 kayıt]",
+        "kasa": "[4 kayıt]",
+        "stockMovements": "[6 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:38:24.688Z"
+      },
+      "nextValue": {
+        "sales": "[5 kayıt]",
+        "kasa": "[5 kayıt]",
+        "stockMovements": "[7 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:39:48.566Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "blocked",
+      "violations": [
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Kasa kaydı geçersiz tutar içeriyor (0 ₺). Tutar 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "7a9afb47-8c60-4085-b42e-abf9c160a9ff"
+          ]
+        },
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Satış kaydı geçersiz toplam içeriyor (0 ₺). Toplam 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "5cd1abdc-39ca-4b25-b95a-e2ba163290a1"
+          ]
+        }
+      ],
+      "time": "2026-05-13T11:39:48.567Z"
+    },
+    {
+      "id": "d8c10c7c-0595-4c30-be20-27857b0db235",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[4 kayıt]",
+        "kasa": "[4 kayıt]",
+        "stockMovements": "[6 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:38:24.688Z"
+      },
+      "nextValue": {
+        "sales": "[5 kayıt]",
+        "kasa": "[5 kayıt]",
+        "stockMovements": "[7 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:38:43.741Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "blocked",
+      "violations": [
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Kasa kaydı geçersiz tutar içeriyor (0 ₺). Tutar 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "524e0c0d-fd48-4cc1-98a9-9a70275fe4c6"
+          ]
+        },
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Satış kaydı geçersiz toplam içeriyor (0 ₺). Toplam 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "d049269d-e230-44d1-929f-bc79c098e29b"
+          ]
+        }
+      ],
+      "time": "2026-05-13T11:38:43.741Z"
+    },
+    {
+      "id": "ca9da3a3-6a43-46ba-b68e-9a5e077a1b58",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[3 kayıt]",
+        "kasa": "[3 kayıt]",
+        "stockMovements": "[5 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:37:19.479Z"
+      },
+      "nextValue": {
+        "sales": "[4 kayıt]",
+        "kasa": "[4 kayıt]",
+        "stockMovements": "[6 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:38:24.688Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:38:24.688Z"
+    },
+    {
+      "id": "de57a170-1d68-4329-ae66-a92803feaa55",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[3 kayıt]",
+        "stockMovements": "[5 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:37:19.479Z"
+      },
+      "nextValue": {
+        "sales": "[4 kayıt]",
+        "stockMovements": "[6 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:37:35.771Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "blocked",
+      "violations": [
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Satış kaydı geçersiz toplam içeriyor (0 ₺). Toplam 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "89196b1c-d4c0-46a0-a172-a3bdd48b3a91"
+          ]
+        }
+      ],
+      "time": "2026-05-13T11:37:35.772Z"
+    },
+    {
+      "id": "3feee70a-e257-4123-8d57-25bef3291430",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[2 kayıt]",
+        "kasa": "[2 kayıt]",
+        "stockMovements": "[4 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:36:36.534Z"
+      },
+      "nextValue": {
+        "sales": "[3 kayıt]",
+        "kasa": "[3 kayıt]",
+        "stockMovements": "[5 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:37:19.479Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:37:19.479Z"
+    },
+    {
+      "id": "0fc58864-0f62-419b-93d5-739c04c46198",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[1 kayıt]",
+        "kasa": "[1 kayıt]",
+        "stockMovements": "[3 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:35:26.984Z"
+      },
+      "nextValue": {
+        "sales": "[2 kayıt]",
+        "kasa": "[2 kayıt]",
+        "stockMovements": "[4 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:36:36.534Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:36:36.534Z"
+    },
+    {
+      "id": "306af3b0-eb30-4b79-8e11-0efb30629806",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[1 kayıt]",
+        "kasa": "[1 kayıt]",
+        "stockMovements": "[3 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:35:26.984Z"
+      },
+      "nextValue": {
+        "sales": "[2 kayıt]",
+        "kasa": "[2 kayıt]",
+        "stockMovements": "[4 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:35:48.255Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "blocked",
+      "violations": [
+        {
+          "ruleId": "zero_amount",
+          "ruleName": "Sıfır veya Negatif Tutar",
+          "message": "Satış kaydı geçersiz toplam içeriyor (0 ₺). Toplam 0'dan büyük olmalıdır.",
+          "severity": "block",
+          "relatedIds": [
+            "17317b98-af2a-4623-9389-8f8664e251a7"
+          ]
+        }
+      ],
+      "time": "2026-05-13T11:35:48.257Z"
+    },
+    {
+      "id": "d7cec3c5-6261-41d3-9ba8-98bc5cdd184e",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "sales": "[0 kayıt]",
+        "kasa": "[0 kayıt]",
+        "stockMovements": "[2 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:34:59.476Z"
+      },
+      "nextValue": {
+        "sales": "[1 kayıt]",
+        "kasa": "[1 kayıt]",
+        "stockMovements": "[3 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:35:26.984Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:35:26.985Z"
+    },
+    {
+      "id": "0f9aff08-7de2-4965-815f-c2ae0a8c82f0",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "cari": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:33:32.143Z"
+      },
+      "nextValue": {
+        "cari": "[2 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:34:59.476Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:34:59.477Z"
+    },
+    {
+      "id": "3c3a40ea-1c09-49d3-a150-1962d966d7c7",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "stockMovements": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:33:31.012Z"
+      },
+      "nextValue": {
+        "stockMovements": "[2 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:33:32.143Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:33:32.143Z"
+    },
+    {
+      "id": "3174659f-2502-45db-aada-1e793e2eba63",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "_lastSyncAt": "2026-05-13T11:33:28.399Z"
+      },
+      "nextValue": {
+        "_lastSyncAt": "2026-05-13T11:33:31.012Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:33:31.013Z"
+    },
+    {
+      "id": "a38f07d7-3b17-40bf-bcb2-f045bfa6a0c5",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "orders": "[0 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:32:28.798Z"
+      },
+      "nextValue": {
+        "orders": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:33:28.399Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:33:28.399Z"
+    },
+    {
+      "id": "ed80c1e9-fd35-4ef0-9ca0-db7a8924d878",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "stockMovements": "[0 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:30:45.374Z"
+      },
+      "nextValue": {
+        "stockMovements": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:32:28.798Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:32:28.799Z"
+    },
+    {
+      "id": "74341747-d3e8-4ba3-99d8-b1c0c0694a8e",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "suppliers": "[0 kayıt]",
+        "cari": "[0 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:30:13.679Z"
+      },
+      "nextValue": {
+        "suppliers": "[1 kayıt]",
+        "cari": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:30:45.374Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:30:45.375Z"
+    },
+    {
+      "id": "58826553-88be-4828-8748-f64cf061e109",
+      "action": "save",
+      "entity": "DB",
+      "prevValue": {
+        "products": "[0 kayıt]"
+      },
+      "nextValue": {
+        "products": "[1 kayıt]",
+        "_lastSyncAt": "2026-05-13T11:30:13.679Z"
+      },
+      "sessionId": "f06eef3e-6f39-4a8d-a8ac-ef86c52359d1",
+      "status": "applied",
+      "time": "2026-05-13T11:30:13.680Z"
+    }
+  ],
+  "_lastSyncAt": "2026-05-13T11:42:01.411Z"
+}

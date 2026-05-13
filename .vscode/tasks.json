@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LLM Studio ile Sohbet (Cline)",
+      "type": "shell",
+      "command": "cline chat --endpoint http://localhost:1234 --model <model-adı>",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Cline LLM Studio Sohbet (bat)",
+      "type": "shell",
+      "command": "cline-llm-chat.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/11"
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

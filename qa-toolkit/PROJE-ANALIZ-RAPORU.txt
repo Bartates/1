@@ -1,0 +1,587 @@
+================================================================================
+  PARSPEL v3.0.0 — KAPSAMLI PROJE ANALİZ RAPORU
+  Tarih: 13 Mayıs 2026
+  Hazırlayan: Kiro AI
+================================================================================
+
+Bu rapor; web sitesi/uygulama dosya yapısı standartlarını, 5 farklı dille
+yazılmış muhasebe programı şemalarını ve Parspel projesinin bu standartlara
+uygunluğunu kapsamlı biçimde ele almaktadır.
+
+================================================================================
+  İÇİNDEKİLER
+================================================================================
+
+  1. WEB SİTESİ DOSYA YAPISI STANDARTLARI
+     1.1  Kötü ama Çalışan Site
+     1.2  Normal ve Çalışan Site
+     1.3  Mükemmel, Hızlı ve Güzel Çalışan Site
+     1.4  Performans Etkileri Karşılaştırması
+
+  2. 5 FARKLI DİLLE YAZILMIŞ MUHASEBE PROGRAMI ŞEMALARI
+     2.1  JavaScript / TypeScript (React)
+     2.2  Python (Django / FastAPI)
+     2.3  Java (Spring Boot)
+     2.4  PHP (Laravel)
+     2.5  C# (.NET)
+
+  3. PARSPEL PROJESİ ANALİZİ
+     3.1  Proje Genel Bilgileri
+     3.2  Mevcut Klasör Yapısı
+     3.3  Bağımlılık Analizi
+     3.4  Standart Uygunluk Skoru
+     3.5  Güçlü Yönler
+     3.6  Zayıf Yönler / İyileştirme Alanları
+     3.7  Performans Değerlendirmesi
+     3.8  Güvenlik Değerlendirmesi
+     3.9  Sonuç ve Öneriler
+
+================================================================================
+  BÖLÜM 1: WEB SİTESİ DOSYA YAPISI STANDARTLARI
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+1.1  KÖTÜ AMA ÇALIŞAN SİTE
+────────────────────────────────────────────────────────────────────────────────
+
+Tanım: Herhangi bir standart gözetilmeksizin, "çalışıyor mu? tamam" mantığıyla
+       oluşturulmuş yapı. Bakımı zor, ölçeklenemiyor.
+
+  proje/
+  ├── index.html          ← Tüm HTML, CSS ve JS tek dosyada
+  ├── style.css           ← 5000+ satır, hiç organize değil
+  ├── script.js           ← Tüm iş mantığı burada, 10.000+ satır
+  ├── jquery.min.js       ← CDN yerine dosya olarak kopyalanmış
+  ├── resim1.jpg
+  ├── resim2.jpg
+  ├── resim3.jpg
+  ├── yedek_eski.js       ← Silinmemiş eski dosyalar
+  ├── test_deneme.html    ← Test sayfaları production'da
+  └── veritabani.sql      ← DB şeması public klasörde (GÜVENLİK AÇIĞI!)
+
+  Sorunlar:
+  [!] Tüm kod tek dosyada — değişiklik yapmak çok riskli
+  [!] Versiyon kontrolü yok
+  [!] Bağımlılık yönetimi yok (npm/yarn)
+  [!] Test yok
+  [!] Build süreci yok — her değişiklik direkt production'a
+  [!] Hassas dosyalar public klasörde
+  [!] Kod tekrarı çok fazla
+  [!] Yorum satırı yok, dokümantasyon yok
+
+  Performans Etkisi:
+  - İlk yükleme: 8-15 saniye (tüm JS/CSS tek seferde yükleniyor)
+  - Lighthouse skoru: 20-40
+  - Bakım maliyeti: Çok yüksek
+
+────────────────────────────────────────────────────────────────────────────────
+1.2  NORMAL VE ÇALIŞAN SİTE
+────────────────────────────────────────────────────────────────────────────────
+
+Tanım: Temel standartlara uyan, organize ama optimize edilmemiş yapı.
+       Küçük-orta ölçekli projeler için yeterli.
+
+  proje/
+  ├── public/
+  │   ├── index.html
+  │   ├── favicon.ico
+  │   └── robots.txt
+  ├── src/
+  │   ├── components/         ← UI bileşenleri ayrılmış
+  │   │   ├── Header.jsx
+  │   │   ├── Footer.jsx
+  │   │   └── Button.jsx
+  │   ├── pages/              ← Sayfalar ayrılmış
+  │   │   ├── Home.jsx
+  │   │   ├── About.jsx
+  │   │   └── Contact.jsx
+  │   ├── styles/             ← CSS ayrılmış
+  │   │   ├── global.css
+  │   │   └── components.css
+  │   ├── utils/              ← Yardımcı fonksiyonlar
+  │   │   └── helpers.js
+  │   ├── App.jsx
+  │   └── main.jsx
+  ├── .env                    ← Ortam değişkenleri
+  ├── .gitignore
+  ├── package.json
+  └── README.md
+
+  Özellikler:
+  [+] Dosyalar mantıklı klasörlere ayrılmış
+  [+] npm ile bağımlılık yönetimi var
+  [+] .env ile config yönetimi var
+  [+] Git kullanılıyor
+  [-] Test yok veya çok az
+  [-] TypeScript yok, tip güvenliği zayıf
+  [-] Code splitting yok
+  [-] Lazy loading yok
+  [-] CI/CD yok
+
+  Performans Etkisi:
+  - İlk yükleme: 2-4 saniye
+  - Lighthouse skoru: 60-75
+  - Bakım maliyeti: Orta
+
+────────────────────────────────────────────────────────────────────────────────
+1.3  MÜKEMMEL, HIZLI VE GÜZEL ÇALIŞAN SİTE
+────────────────────────────────────────────────────────────────────────────────
+
+Tanım: Endüstri standartlarının tamamını karşılayan, ölçeklenebilir,
+       test edilmiş, optimize edilmiş yapı.
+
+  proje/
+  ├── public/
+  │   ├── favicon.svg
+  │   ├── robots.txt
+  │   ├── sitemap.xml
+  │   └── manifest.webmanifest    ← PWA desteği
+  ├── src/
+  │   ├── components/
+  │   │   ├── ui/                 ← Temel UI bileşenleri (Button, Input...)
+  │   │   ├── layout/             ← Layout bileşenleri (Header, Sidebar...)
+  │   │   ├── forms/              ← Form bileşenleri
+  │   │   └── charts/             ← Grafik bileşenleri
+  │   ├── pages/                  ← Sayfa bileşenleri
+  │   ├── hooks/                  ← Custom React hook'ları
+  │   ├── lib/                    ← İş mantığı, yardımcı fonksiyonlar
+  │   ├── types/                  ← TypeScript tip tanımları
+  │   ├── stores/                 ← Global state (Zustand/Redux)
+  │   ├── api/                    ← API katmanı
+  │   ├── assets/                 ← Optimize edilmiş görseller
+  │   ├── styles/                 ← Global stiller
+  │   ├── __tests__/              ← Unit testler
+  │   ├── App.tsx
+  │   └── main.tsx
+  ├── e2e/                        ← E2E testler (Playwright/Cypress)
+  ├── scripts/                    ← Build/deploy scriptleri
+  ├── .github/workflows/          ← CI/CD pipeline
+  ├── .env.example                ← Örnek env dosyası
+  ├── .eslintrc                   ← Lint kuralları
+  ├── .prettierrc                 ← Kod formatlama
+  ├── tsconfig.json               ← TypeScript config
+  ├── vite.config.ts              ← Build config (code splitting)
+  ├── playwright.config.ts        ← E2E test config
+  ├── package.json
+  └── README.md
+
+  Özellikler:
+  [+] TypeScript — tam tip güvenliği
+  [+] Code splitting — her sayfa ayrı bundle
+  [+] Lazy loading — ihtiyaç anında yükleme
+  [+] PWA — offline çalışma, kurulabilir
+  [+] Unit + E2E testler
+  [+] CI/CD pipeline — otomatik test ve deploy
+  [+] ESLint + Prettier — kod kalitesi
+  [+] Husky pre-commit hooks
+  [+] Lighthouse 90+ skor
+  [+] SEO optimize
+  [+] Accessibility (WCAG 2.1)
+  [+] Error boundary — hata yönetimi
+  [+] Logging sistemi
+
+  Performans Etkisi:
+  - İlk yükleme (FCP): < 1 saniye
+  - Lighthouse skoru: 90-100
+  - Bakım maliyeti: Düşük (iyi organize)
+
+────────────────────────────────────────────────────────────────────────────────
+1.4  PERFORMANS ETKİLERİ KARŞILAŞTIRMASI
+────────────────────────────────────────────────────────────────────────────────
+
+  Metrik                  | Kötü        | Normal      | Mükemmel
+  ----------------------- | ----------- | ----------- | -----------
+  İlk Yükleme (FCP)       | 8-15 sn     | 2-4 sn      | < 1 sn
+  Lighthouse Performans   | 20-40       | 60-75       | 90-100
+  Bundle Boyutu           | 5-20 MB     | 1-3 MB      | 200-500 KB
+  Code Splitting          | Yok         | Kısmi       | Tam
+  Caching                 | Yok         | Temel       | Gelişmiş
+  Test Kapsamı            | %0          | %10-30      | %70-90
+  CI/CD                   | Yok         | Kısmi       | Tam
+  TypeScript              | Yok         | Kısmi       | Tam
+  Bakım Kolaylığı         | Çok Zor     | Orta        | Kolay
+  Ölçeklenebilirlik       | Yok         | Sınırlı     | Yüksek
+
+
+================================================================================
+  BOLUM 2: 5 FARKLI DILLE YAZILMIS MUHASEBE PROGRAMI SEMALARI
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+2.1  JAVASCRIPT / TYPESCRIPT (React + Vite) — FRONTEND SPA
+────────────────────────────────────────────────────────────────────────────────
+
+  MIMARI SEMA:
+  ┌─────────────────────────────────────────────────────────────┐
+  │                    TARAYICI / MOBIL APP                     │
+  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+  │  │  React   │  │ Zustand  │  │  Dexie   │  │Capacitor │   │
+  │  │  Pages   │→ │  Store   │→ │IndexedDB │  │(Android) │   │
+  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘   │
+  │         ↓              ↓            ↓                       │
+  │  ┌──────────────────────────────────────┐                  │
+  │  │           Firebase Firestore          │                  │
+  │  │     (Bulut Senkronizasyon)            │                  │
+  │  └──────────────────────────────────────┘                  │
+  └─────────────────────────────────────────────────────────────┘
+
+  KLASOR YAPISI:
+  muhasebe-js/
+  ├── src/
+  │   ├── pages/
+  │   │   ├── Dashboard.tsx      ← Ozet ekrani
+  │   │   ├── Sales.tsx          ← Satis yonetimi
+  │   │   ├── Fatura.tsx         ← Fatura kesme
+  │   │   ├── Kasa.tsx           ← Kasa hareketleri
+  │   │   ├── Cari.tsx           ← Cari hesaplar
+  │   │   ├── Bank.tsx           ← Banka islemleri
+  │   │   ├── Reports.tsx        ← Raporlar
+  │   │   └── Settings.tsx       ← Ayarlar
+  │   ├── agents/
+  │   │   ├── SatisAgent.ts      ← Satis AI agent
+  │   │   ├── KasaAgent.ts       ← Kasa AI agent
+  │   │   ├── StokAgent.ts       ← Stok AI agent
+  │   │   └── orchestrator.ts    ← Agent koordinatoru
+  │   ├── db/
+  │   │   └── indexeddb.ts       ← Yerel veritabani
+  │   ├── hooks/
+  │   │   └── useDB.ts           ← Veri erisim hook
+  │   └── lib/
+  │       ├── userManager.ts     ← Kullanici yonetimi
+  │       └── excelExport.ts     ← Excel export
+  ├── android/                   ← Capacitor Android
+  ├── e2e/                       ← Playwright testler
+  └── package.json
+
+  VERİ MODELI (TypeScript):
+  interface Satis {
+    id: string;
+    urunId: string;
+    miktar: number;
+    birimFiyat: number;
+    toplam: number;
+    kasaId: string;
+    createdAt: string;
+    status: "tamamlandi" | "iptal" | "bekliyor";
+  }
+
+  interface Kasa {
+    id: string;
+    type: "gelir" | "gider";
+    amount: number;
+    kasa: "nakit" | "banka";
+    aciklama: string;
+    createdAt: string;
+  }
+
+  interface Cari {
+    id: string;
+    ad: string;
+    telefon: string;
+    bakiye: number;
+    tip: "musteri" | "tedarikci";
+  }
+
+  AVANTAJLAR:
+  [+] Offline-first calisma (IndexedDB)
+  [+] PWA + Android uygulama
+  [+] AI agent entegrasyonu
+  [+] Gercek zamanli senkronizasyon
+  [+] TypeScript ile tip guvenligi
+
+  DEZAVANTAJLAR:
+  [-] Backend yok — sunucu tarafli islem yapamaz
+  [-] Buyuk veri setlerinde performans sorunu
+  [-] Cok kullanicili senaryo sinirli
+
+────────────────────────────────────────────────────────────────────────────────
+2.2  PYTHON (Django + PostgreSQL) — FULL STACK
+────────────────────────────────────────────────────────────────────────────────
+
+  MIMARI SEMA:
+  ┌──────────┐    HTTP/REST    ┌──────────────────────────┐
+  │ Tarayici │ ←────────────→ │     Django Backend        │
+  │  (HTML)  │                │  ┌────────┐ ┌─────────┐  │
+  └──────────┘                │  │ Views  │ │  ORM    │  │
+                              │  └────────┘ └─────────┘  │
+                              │         ↓                 │
+                              │  ┌──────────────────┐    │
+                              │  │   PostgreSQL DB   │    │
+                              │  └──────────────────┘    │
+                              └──────────────────────────┘
+
+  KLASOR YAPISI:
+  muhasebe-python/
+  ├── muhasebe/               ← Django proje
+  │   ├── settings.py
+  │   ├── urls.py
+  │   └── wsgi.py
+  ├── apps/
+  │   ├── satis/              ← Satis modulu
+  │   │   ├── models.py
+  │   │   ├── views.py
+  │   │   ├── serializers.py
+  │   │   └── urls.py
+  │   ├── kasa/               ← Kasa modulu
+  │   ├── cari/               ← Cari modulu
+  │   ├── stok/               ← Stok modulu
+  │   └── raporlar/           ← Rapor modulu
+  ├── templates/              ← HTML sablonlar
+  ├── static/                 ← CSS, JS, gorseller
+  ├── requirements.txt
+  └── manage.py
+
+  VERİ MODELİ (Django ORM):
+  class Satis(models.Model):
+      urun = models.ForeignKey(Urun, on_delete=models.PROTECT)
+      miktar = models.DecimalField(max_digits=10, decimal_places=2)
+      birim_fiyat = models.DecimalField(max_digits=10, decimal_places=2)
+      toplam = models.DecimalField(max_digits=12, decimal_places=2)
+      kasa = models.ForeignKey(Kasa, on_delete=models.PROTECT)
+      tarih = models.DateTimeField(auto_now_add=True)
+      status = models.CharField(choices=STATUS_CHOICES, max_length=20)
+
+  class Kasa(models.Model):
+      islem_tipi = models.CharField(choices=[('G','Gelir'),('C','Gider')])
+      tutar = models.DecimalField(max_digits=12, decimal_places=2)
+      aciklama = models.TextField()
+      tarih = models.DateTimeField(auto_now_add=True)
+
+  AVANTAJLAR:
+  [+] Guclu ORM — karmasik sorgular kolay
+  [+] Django Admin — hazir yonetim paneli
+  [+] Cok kullanicili destek
+  [+] Guclu rapor uretme (pandas, openpyxl)
+  [+] REST API kolayca eklenebilir
+
+  DEZAVANTAJLAR:
+  [-] Sunucu gerektirir
+  [-] Offline calisma yok
+  [-] Frontend ayri gelistirilmeli
+
+────────────────────────────────────────────────────────────────────────────────
+2.3  JAVA (Spring Boot + MySQL) — KURUMSAL
+────────────────────────────────────────────────────────────────────────────────
+
+  MIMARI SEMA:
+  ┌──────────┐   REST/JSON   ┌─────────────────────────────────┐
+  │  React   │ ←───────────→ │        Spring Boot API           │
+  │ Frontend │               │  ┌──────────┐  ┌─────────────┐  │
+  └──────────┘               │  │Controller│  │   Service   │  │
+                             │  └──────────┘  └─────────────┘  │
+                             │         ↓              ↓         │
+                             │  ┌──────────────────────────┐   │
+                             │  │   JPA Repository (ORM)    │   │
+                             │  └──────────────────────────┘   │
+                             │         ↓                        │
+                             │  ┌──────────────────────────┐   │
+                             │  │       MySQL Database       │   │
+                             │  └──────────────────────────┘   │
+                             └─────────────────────────────────┘
+
+  KLASOR YAPISI:
+  muhasebe-java/
+  ├── src/main/java/com/muhasebe/
+  │   ├── controller/
+  │   │   ├── SatisController.java
+  │   │   ├── KasaController.java
+  │   │   └── RaporController.java
+  │   ├── service/
+  │   │   ├── SatisService.java
+  │   │   └── KasaService.java
+  │   ├── repository/
+  │   │   ├── SatisRepository.java
+  │   │   └── KasaRepository.java
+  │   ├── model/
+  │   │   ├── Satis.java
+  │   │   ├── Kasa.java
+  │   │   └── Cari.java
+  │   └── dto/
+  │       └── SatisDTO.java
+  ├── src/main/resources/
+  │   └── application.properties
+  └── pom.xml
+
+  VERİ MODELİ (JPA Entity):
+  @Entity
+  @Table(name = "satislar")
+  public class Satis {
+      @Id @GeneratedValue
+      private Long id;
+
+      @ManyToOne
+      @JoinColumn(name = "urun_id")
+      private Urun urun;
+
+      private BigDecimal miktar;
+      private BigDecimal birimFiyat;
+      private BigDecimal toplam;
+
+      @Enumerated(EnumType.STRING)
+      private SatisStatus status;
+
+      @CreationTimestamp
+      private LocalDateTime createdAt;
+  }
+
+  AVANTAJLAR:
+  [+] Kurumsal duzey guvenlik (Spring Security)
+  [+] Yuksek performans, buyuk veri
+  [+] Guclu transaction yonetimi
+  [+] Mikroservis mimarisine uygun
+  [+] JUnit ile kapsamli test
+
+  DEZAVANTAJLAR:
+  [-] Ogrenme egrisi yuksek
+  [-] Yapilandirma karmasik
+  [-] Gelistirme sureci yavas
+
+────────────────────────────────────────────────────────────────────────────────
+2.4  PHP (Laravel + MySQL) — KLASIK WEB
+────────────────────────────────────────────────────────────────────────────────
+
+  MIMARI SEMA:
+  ┌──────────┐   HTTP   ┌─────────────────────────────┐
+  │Tarayici  │ ←──────→ │       Laravel MVC            │
+  └──────────┘          │  ┌────────┐  ┌──────────┐   │
+                        │  │ Route  │→ │Controller│   │
+                        │  └────────┘  └──────────┘   │
+                        │                    ↓         │
+                        │  ┌──────────────────────┐   │
+                        │  │  Eloquent ORM (Model) │   │
+                        │  └──────────────────────┘   │
+                        │              ↓               │
+                        │  ┌──────────────────────┐   │
+                        │  │    MySQL Database      │   │
+                        │  └──────────────────────┘   │
+                        └─────────────────────────────┘
+
+  KLASOR YAPISI:
+  muhasebe-php/
+  ├── app/
+  │   ├── Http/Controllers/
+  │   │   ├── SatisController.php
+  │   │   ├── KasaController.php
+  │   │   └── RaporController.php
+  │   ├── Models/
+  │   │   ├── Satis.php
+  │   │   ├── Kasa.php
+  │   │   └── Cari.php
+  │   └── Services/
+  │       └── MuhasebeService.php
+  ├── database/
+  │   ├── migrations/         ← DB degisiklikleri
+  │   └── seeders/            ← Ornek veri
+  ├── resources/views/        ← Blade sablonlar
+  ├── routes/
+  │   └── web.php
+  └── composer.json
+
+  VERİ MODELİ (Eloquent):
+  class Satis extends Model {
+      protected $fillable = [
+          'urun_id', 'miktar', 'birim_fiyat',
+          'toplam', 'kasa_id', 'status'
+      ];
+
+      public function urun() {
+          return $this->belongsTo(Urun::class);
+      }
+
+      public function kasa() {
+          return $this->belongsTo(Kasa::class);
+      }
+  }
+
+  AVANTAJLAR:
+  [+] Hizli gelistirme
+  [+] Genis hosting destegi (ucuz)
+  [+] Artisan CLI ile kod uretimi
+  [+] Blade template engine
+  [+] Genis ekosistem
+
+  DEZAVANTAJLAR:
+  [-] Performans Java/Go'dan dusuk
+  [-] Tip guvenligi zayif (PHP 8 ile iyilesti)
+  [-] Buyuk projelerde karmasiklik artar
+
+────────────────────────────────────────────────────────────────────────────────
+2.5  C# (.NET 8 + SQL Server) — MICROSOFT EKOSISTEMI
+────────────────────────────────────────────────────────────────────────────────
+
+  MIMARI SEMA:
+  ┌──────────┐  REST/SignalR  ┌──────────────────────────────┐
+  │  Blazor  │ ←────────────→ │      ASP.NET Core API         │
+  │ Frontend │                │  ┌──────────┐  ┌──────────┐  │
+  └──────────┘                │  │Controller│  │ Service  │  │
+                              │  └──────────┘  └──────────┘  │
+                              │         ↓                     │
+                              │  ┌──────────────────────┐    │
+                              │  │  Entity Framework Core│    │
+                              │  └──────────────────────┘    │
+                              │         ↓                     │
+                              │  ┌──────────────────────┐    │
+                              │  │    SQL Server / Azure │    │
+                              │  └──────────────────────┘    │
+                              └──────────────────────────────┘
+
+  KLASOR YAPISI:
+  muhasebe-dotnet/
+  ├── MuhasebeAPI/
+  │   ├── Controllers/
+  │   │   ├── SatisController.cs
+  │   │   └── KasaController.cs
+  │   ├── Services/
+  │   │   └── MuhasebeService.cs
+  │   ├── Models/
+  │   │   ├── Satis.cs
+  │   │   └── Kasa.cs
+  │   ├── Data/
+  │   │   └── AppDbContext.cs
+  │   └── Program.cs
+  ├── MuhasebeUI/             ← Blazor frontend
+  └── MuhasebeTests/          ← xUnit testler
+
+  VERİ MODELİ (Entity Framework):
+  public class Satis {
+      public int Id { get; set; }
+      public int UrunId { get; set; }
+      public decimal Miktar { get; set; }
+      public decimal BirimFiyat { get; set; }
+      public decimal Toplam { get; set; }
+      public SatisStatus Status { get; set; }
+      public DateTime CreatedAt { get; set; }
+
+      public virtual Urun Urun { get; set; }
+      public virtual Kasa Kasa { get; set; }
+  }
+
+  AVANTAJLAR:
+  [+] Guclu tip sistemi
+  [+] Azure entegrasyonu mukemmel
+  [+] SignalR ile gercek zamanli
+  [+] Blazor ile full-stack C#
+  [+] Visual Studio destegi
+
+  DEZAVANTAJLAR:
+  [-] Windows/Azure bagimliligı
+  [-] Lisans maliyeti (SQL Server)
+  [-] Ogrenme egrisi
+
+────────────────────────────────────────────────────────────────────────────────
+2.6  5 DİL KARŞILAŞTIRMA TABLOSU
+────────────────────────────────────────────────────────────────────────────────
+
+  Kriter              | JS/TS    | Python   | Java     | PHP      | C#
+  ------------------- | -------- | -------- | -------- | -------- | --------
+  Ogrenme Kolayligi   | Orta     | Kolay    | Zor      | Kolay    | Orta
+  Performans          | Yuksek   | Orta     | Cok Yuk. | Orta     | Yuksek
+  Offline Destek      | Tam      | Yok      | Yok      | Yok      | Kismi
+  Mobil Destek        | Tam(PWA) | Yok      | Yok      | Yok      | Kismi
+  Tip Guvenligi       | Yuksek   | Orta     | Tam      | Orta     | Tam
+  Ekosistem           | Genis    | Genis    | Genis    | Genis    | Orta
+  Hosting Maliyeti    | Dusuk    | Orta     | Yuksek   | Dusuk    | Yuksek
+  Kurumsal Kullanim   | Orta     | Yuksek   | Cok Yuk. | Orta     | Yuksek
+  AI Entegrasyonu     | Kolay    | Cok Kol. | Orta     | Zor      | Orta
+  Test Altyapisi      | Guclu    | Guclu    | Guclu    | Orta     | Guclu
+

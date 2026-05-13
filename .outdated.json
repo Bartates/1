@@ -1,0 +1,86 @@
+{
+  "@hookform/resolvers": {
+    "current": "3.10.0",
+    "wanted": "3.10.0",
+    "latest": "5.2.2",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\@hookform\\resolvers"
+  },
+  "@vitejs/plugin-react": {
+    "current": "5.2.0",
+    "wanted": "5.2.0",
+    "latest": "6.0.1",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\@vitejs\\plugin-react"
+  },
+  "date-fns": {
+    "current": "3.6.0",
+    "wanted": "3.6.0",
+    "latest": "4.1.0",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\date-fns"
+  },
+  "fast-check": {
+    "current": "3.23.2",
+    "wanted": "3.23.2",
+    "latest": "4.8.0",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\fast-check"
+  },
+  "lucide-react": {
+    "current": "0.545.0",
+    "wanted": "0.545.0",
+    "latest": "1.14.0",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\lucide-react"
+  },
+  "react": {
+    "current": "19.1.0",
+    "wanted": "19.1.0",
+    "latest": "19.2.6",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\react"
+  },
+  "react-day-picker": {
+    "current": "9.14.0",
+    "wanted": "9.14.0",
+    "latest": "10.0.0",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\react-day-picker"
+  },
+  "react-dom": {
+    "current": "19.1.0",
+    "wanted": "19.1.0",
+    "latest": "19.2.6",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\react-dom"
+  },
+  "react-resizable-panels": {
+    "current": "2.1.9",
+    "wanted": "2.1.9",
+    "latest": "4.11.0",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\react-resizable-panels"
+  },
+  "recharts": {
+    "current": "2.15.4",
+    "wanted": "2.15.4",
+    "latest": "3.8.1",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\recharts"
+  },
+  "vite": {
+    "current": "7.3.3",
+    "wanted": "7.3.3",
+    "latest": "8.0.12",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\vite"
+  },
+  "zod": {
+    "current": "3.25.76",
+    "wanted": "3.25.76",
+    "latest": "4.4.3",
+    "dependent": "11",
+    "location": "C:\\Users\\PARS PELET\\Desktop\\tap\\vss\\gitlab\\11\\node_modules\\zod"
+  }
+}

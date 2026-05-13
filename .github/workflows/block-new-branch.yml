@@ -1,0 +1,25 @@
+name: Block New Branch Creation
+
+on:
+  create:
+
+permissions:
+  contents: write
+
+jobs:
+  enforce-branch-policy:
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'branch' && github.ref_name != 'dev'
+    steps:
+      - name: Delete unauthorized branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "⛔ '${{ github.ref_name }}' branch'i oluşturmak yasaktır."
+          echo "Bu proje yalnızca 'dev' branch'ini kullanır."
+          echo "'main' dahil tüm diğer branch'ler otomatik olarak silinir."
+          echo "Tüm değişiklikler doğrudan 'dev' branch'ine push edilmelidir."
+          gh api \
+            --method DELETE \
+            /repos/${{ github.repository }}/git/refs/heads/${{ github.ref_name }}
+          echo "✅ Branch '${{ github.ref_name }}' silindi."

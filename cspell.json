@@ -1,0 +1,33 @@
+{
+  "version": "0.2",
+  "language": "tr",
+  "dictionaries": ["tr-words"],
+  "dictionaryDefinitions": [
+    {
+      "name": "tr-words",
+      "path": "./.cspell/tr-words.txt",
+      "description": "Project Turkish words"
+    }
+  ],
+  "ignorePaths": ["**/node_modules/**", "**/dist/**"],
+  "words": []
+}
+{
+  "version": "0.2",
+  "language": "tr,en",
+  "dictionaryDefinitions": [
+    {
+      "name": "turkish-project",
+      "path": ".cspell/tr-words.txt",
+      "description": "Project Turkish word list"
+    }
+  ],
+  "dictionaries": ["turkish-project"],
+  "ignorePaths": [
+    "node_modules",
+    "build",
+    "dist",
+    ".git",
+    "android/build"
+  ]
+}

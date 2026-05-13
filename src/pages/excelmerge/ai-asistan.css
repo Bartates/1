@@ -1,0 +1,39 @@
+.bounce-delay-0 {
+  animation-delay: 0ms;
+}
+
+.bounce-delay-150 {
+  animation-delay: 150ms;
+}
+
+.bounce-delay-300 {
+  animation-delay: 300ms;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 0.25rem;
+  background: hsl(var(--primary));
+}
+
+.progress-fill-0 { width: 0%; }
+.progress-fill-5 { width: 5%; }
+.progress-fill-10 { width: 10%; }
+.progress-fill-15 { width: 15%; }
+.progress-fill-20 { width: 20%; }
+.progress-fill-25 { width: 25%; }
+.progress-fill-30 { width: 30%; }
+.progress-fill-35 { width: 35%; }
+.progress-fill-40 { width: 40%; }
+.progress-fill-45 { width: 45%; }
+.progress-fill-50 { width: 50%; }
+.progress-fill-55 { width: 55%; }
+.progress-fill-60 { width: 60%; }
+.progress-fill-65 { width: 65%; }
+.progress-fill-70 { width: 70%; }
+.progress-fill-75 { width: 75%; }
+.progress-fill-80 { width: 80%; }
+.progress-fill-85 { width: 85%; }
+.progress-fill-90 { width: 90%; }
+.progress-fill-95 { width: 95%; }
+.progress-fill-100 { width: 100%; }
