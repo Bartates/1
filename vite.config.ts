@@ -1,10 +1,10 @@
 /// <reference types="vitest" />
 /// <reference types="vitest/config" />
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath } from "url";
+import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { manualChunks } from "./src/lib/vite-manual-chunks";
 
@@ -81,7 +81,10 @@ export default defineConfig({
       },
     },
     // Task 13.4: Asset compression
-    minify: 'esbuild',
+    minify: "esbuild",
+    // Emoji ve Türkçe karakterlerin bozulmaması için
+    target: "esnext",
+    target: "esnext",
     // Chunk size uyarı limiti (KB)
     chunkSizeWarningLimit: 500,
     // Source map sadece development'ta
@@ -104,19 +107,19 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: ['./src/test/setup.ts'],
+    environment: "jsdom",
+    setupFiles: ["./src/test/setup.ts"],
     exclude: [
-      '**/node_modules/**',
-      '**/dist/**',
-      'scripts/**',
+      "**/node_modules/**",
+      "**/dist/**",
+      "scripts/**",
       // Playwright e2e testleri — ayrı runner ile çalışır
-      '**/e2e/**',
+      "**/e2e/**",
       // Boş test dosyaları
-      '**/gercekci-senaryolar.test.ts',
-      '**/uygulama-gercek.test.ts',
+      "**/gercekci-senaryolar.test.ts",
+      "**/uygulama-gercek.test.ts",
       // vy/ yedek klasörü — src/ ile aynı
-      'vy/**',
+      "vy/**",
     ],
   },
 });
